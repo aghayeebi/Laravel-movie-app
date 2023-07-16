@@ -18,14 +18,11 @@
         @keydown.shift.tab="isOpen = false"
     >
     <div class="absolute top-0">
-        <svg class="fill-current w-4 text-gray-500 mt-2 ml-2" viewBox="0 0 266 283" fill="none"
-             xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M248 122C248 189.379 192.483 244 124 244C55.5167 244 0 189.379 0 122C0 54.6213 55.5167 0 124 0C192.483 0 248 54.6213 248 122Z"
-                fill="#D9D9D9"/>
-            <path d="M199.502 218.763L209.211 210.56L265.11 274.567L255.401 282.77L199.502 218.763Z"
-                  fill="#D9D9D9"/>
-        </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+                    <path d="M21 21l-6 -6"></path>
+                </svg>
     </div>
     <div wire:loading class="spinner top-0 right-0 mr-4 mt-3"></div>
     @if(strlen($search) >= 2)
